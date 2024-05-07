@@ -26,7 +26,8 @@ app.use(cors({
     origin: [
       'http://localhost:5173',
       'http://localhost:5173/admin',
-      'http://localhost:5173/admin/dashboard'
+      'http://localhost:5173/admin/dashboard',
+      'https://hydromaze-water-refilling.vercel.app/'
     ],  // THE HTTP(ORIGIN) THAT WILL ALLOW TO ACCESS THE ROUTES
     credentials: true,
   }));
