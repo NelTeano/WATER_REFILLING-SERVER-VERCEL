@@ -27,7 +27,14 @@ app.use(cors({
       'http://localhost:5173',
       'http://localhost:5173/admin',
       'http://localhost:5173/admin/dashboard',
-      'https://hydromaze-water-refilling.vercel.app/'
+      'https://hydromaze-water-refilling.vercel.app/',
+      'https://hydromaze-water-refilling.vercel.app/client-dashboard',
+      'https://hydromaze-water-refilling.vercel.app/client-dashboard/order-status',
+      'https://hydromaze-water-refilling.vercel.app/client-dashboard/order',
+      'https://hydromaze-water-refilling.vercel.app/location',
+      'https://hydromaze-water-refilling.vercel.app/receipt',
+      'https://hydromaze-water-refilling.vercel.app/register',
+      'https://hydromaze-water-refilling.vercel.app/history',
     ],  // THE HTTP(ORIGIN) THAT WILL ALLOW TO ACCESS THE ROUTES
     credentials: true,
   }));
