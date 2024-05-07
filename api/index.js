@@ -31,12 +31,14 @@ app.use(cors({
     credentials: true,
   }));
 
-
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // ACTIVATE SERVER PORT 
 app.listen(PORT, function () {
   console.log("Listening on http://localhost:" + PORT);
 });
+
+
 
 app.use('/api', UserRoutes); // FOR TESTING ROUTE WORKS
 app.use('/api', orderRoute)
