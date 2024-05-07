@@ -23,21 +23,26 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors({
-    origin: [
-      'http://localhost:5173',
-      'http://localhost:5173/admin',
-      'http://localhost:5173/admin/dashboard',
-      'https://hydromaze-water-refilling.vercel.app/',
-      'https://hydromaze-water-refilling.vercel.app/client-dashboard',
-      'https://hydromaze-water-refilling.vercel.app/client-dashboard/order-status',
-      'https://hydromaze-water-refilling.vercel.app/client-dashboard/order',
-      'https://hydromaze-water-refilling.vercel.app/location',
-      'https://hydromaze-water-refilling.vercel.app/receipt',
-      'https://hydromaze-water-refilling.vercel.app/register',
-      'https://hydromaze-water-refilling.vercel.app/history',
-    ],  // THE HTTP(ORIGIN) THAT WILL ALLOW TO ACCESS THE ROUTES
-    credentials: true,
-  }));
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5173/admin',
+    'http://localhost:5173/admin/dashboard',
+    'https://hydromaze-water-refilling.vercel.app/',
+    'https://hydromaze-water-refilling.vercel.app/client-dashboard',
+    'https://hydromaze-water-refilling.vercel.app/client-dashboard/order-status',
+    'https://hydromaze-water-refilling.vercel.app/client-dashboard/order',
+    'https://hydromaze-water-refilling.vercel.app/location',
+    'https://hydromaze-water-refilling.vercel.app/receipt',
+    'https://hydromaze-water-refilling.vercel.app/register',
+    'https://hydromaze-water-refilling.vercel.app/history',
+    'https://hydromaze-server-vercel.vercel.app',
+    'https://hydromaze-server-vercel.vercel.app/api',
+    'https://hydromaze-server-vercel.vercel.app/api/orders',
+    'https://hydromaze-server-vercel.vercel.app/users',
+  ],  
+  credentials: true,
+}));
+
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
