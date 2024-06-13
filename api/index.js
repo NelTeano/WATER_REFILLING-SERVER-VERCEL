@@ -27,7 +27,7 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:5173/admin',
     'http://localhost:5173/admin/dashboard',
-    'https://hydromaze-water-refilling.vercel.app/',
+    'https://hydromaze-water-refilling.vercel.app',
     'https://hydromaze-water-refilling.vercel.app/client-dashboard',
     'https://hydromaze-water-refilling.vercel.app/client-dashboard/order-status',
     'https://hydromaze-water-refilling.vercel.app/client-dashboard/order',
@@ -42,6 +42,7 @@ app.use(cors({
   ],  
   credentials: true,
 }));
+
 
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
